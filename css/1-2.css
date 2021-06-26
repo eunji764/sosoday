@@ -1,0 +1,427 @@
+* {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    color: #333333; 
+    font-family:"sinsin";
+}
+
+@font-face {
+    font-family:"garosu";
+    src:url('KoreanGRS-R.woff');
+}
+
+@font-face {
+    font-family:"dream";
+    src:url('KoreanDREAM6-R.woff');
+}
+
+@font-face {
+    font-family:"sinsin";
+    src:url('KoreanNMJ-B.woff');
+}
+a {
+    text-decoration:none;
+    color: inherit;
+}
+
+#clear {
+    clear: both;
+}
+
+header {
+    width: 1200px;
+    height: 100px;
+}
+
+.logo {
+    width: 150px;
+    height: 100px;
+    float: left;
+    text-align: center;
+}
+
+.logo img {
+    width: 130px;
+    margin-top: 8px;
+}
+
+.u_menu {
+    width: 1050px;
+    height: 50px;
+    float: right;
+    text-align: right;
+    
+}
+
+.u_menu div {
+    position: relative;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    float: right;
+    margin-top: 20px;
+}
+
+.u_menu img {
+    width: 20px;
+    height: 17px;
+    position: absolute;
+    top: 5px;
+    left: 8%;
+}
+
+.u_menu span {
+    font-family:"dream";
+    font-size: 12px;
+    color: #666666;
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 33%;
+}
+
+nav {
+    width: 1050px;
+    height: 50px;
+    float: right;
+}
+
+.menu {
+    float: left;
+    text-align: center;
+}
+
+.menu > li {
+    line-height: 2em;
+    float: left;
+    width: 160px;
+    height: 30px;
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+.menu>li:hover {
+    background-color: rgba(247, 233, 233, 0.7);
+}
+
+
+#english {
+    font-family: "Baskerville BT";
+    font-size: 18px;
+}
+
+#categ {
+    position: relative;
+}
+
+.submenu {
+    background-color: #ffffff;
+    position: absolute;
+    width: 160px;
+    height: 126px;
+    display: none;
+    z-index: 1;
+    top: 40px;
+}
+
+.submenu>li {
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.submenu>li:hover {
+    background-color: rgba(246, 214, 214, 0.7);
+}
+
+.subsubmenu {
+    background-color: #ffffff;
+    left: 160px;
+    top:0;
+    width: 170px;
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+.subsubmenu>li {
+    padding: 5px 0;
+    transition: all 0.5s;
+}
+
+.subsubmenu>li:hover {
+    background-color: rgba(246, 214, 214, 0.7);
+}
+
+.search {
+    width: 250px;
+    height: 50px;
+    float: right;
+}
+
+.inputbox {
+    margin-top: 10px;
+    width: 250px;
+    height: 30px;
+    background-color: #eeeeee;
+}
+
+.inputbox input {
+    border: none;
+    background-color: #eeeeee;
+    margin-top: 7px;
+    margin-left: 15px;
+}
+
+.inputbox input:focus {
+    outline: none;
+    background-color: #eeeeee;
+    margin-top: 7px;
+    margin-left: 15px;
+}
+
+.inputbox img {
+    width: 25px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.contents {
+    width: 1200px;
+    height: 2580px;
+}
+
+.contents_group {
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+}
+
+.path {
+    width: 1200px;
+    height: 30px;
+    text-align: right;
+}
+
+.path span {
+    color: #666666;
+    font-size: 15px;
+}
+
+.main_menu {
+    width: 100px;
+    height: 50px;
+    margin-left: 200px;
+    padding-top: 27px;
+    font-size: 18px;
+    float: left;
+}
+
+.category {
+    width: 750px;
+    height: 80px;
+    float: right;
+    margin-right: 120px;
+    text-align: left;
+}
+
+#cate1 {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom:12px;
+    padding-left: 9px;
+}
+
+#cate1, #cate3, #cate4 {
+    margin-right: 34px;
+}
+
+#cate2 {
+    border: 1px solid #333333;
+}
+
+#cate1:hover , #cate3:hover, #cate4:hover, #cate5:hover {
+    border: 1px solid #333333;
+}
+
+.category span {
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+.contents_best_item {
+    width: 1200px;
+    height: 510px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.best_icon {
+    width: 350px;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#heart {
+    width: 35px;
+    height: 29px;
+}
+
+.best_icon span {
+    font-family: "Baskerville BT";
+}
+
+.best1 {
+    display: inline-block;
+    width: 350px;
+    height: 464px;
+    margin: 20px 20px 0 20px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+
+
+.best_item {
+    width: 350px;
+    height: 384px;
+}
+
+.best_item img {
+    width: 330px;
+    height: 330px;
+}
+
+.best_item img:hover {
+    opacity: 0.8;
+}
+.product_name_best span {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.price_best span {
+    font-size: 15px;
+    line-height: 1.7em;
+    color: #995002;
+}
+
+.contents_item {
+    width: 100%;
+    height: 1825px;
+    text-align: center;
+}
+
+.count {
+    width: 1200px;
+    height: 39px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.amount {
+    float: left;
+    margin-top: 10px;
+}
+
+.sort {
+    float: right;
+    margin-top: 10px;
+}
+
+.item {
+    width: 300px;
+    height: 340px;
+    float: left;
+}
+
+.item img {
+    width: 260px;
+}
+
+.item img:hover {
+    opacity: 0.8;
+}
+
+.product_name, .price {
+    width: 260px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.product_name span {
+    font-size: 15px;
+    line-height: 1.4em;
+}
+
+.price span {
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #995002;
+}
+
+.pagemove {
+    width: 1200px;
+    height: 30px;
+    text-align: center;
+}
+
+.pagemove span {
+    border: 1px solid #999999;
+    padding: 1px 5px;
+}
+
+#now {
+    background-color: #eeeeee;
+}
+
+#next:hover {
+    background-color: #eeeeee;
+}
+
+footer {
+    width: 1200px;
+    height: 100px;
+    background-color: #eeeeee;
+}
+
+.logo_b {
+    float: left;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+.logo_b img {
+    width: 130px;
+    padding-top: 7px;
+}
+
+.menu_b, .copy {
+    text-align: center;
+    float: right;
+    width: 1000px;
+    height: 50px;
+    color: #999999;
+}
+
+.menu_b>div {
+    margin-top: 20px;
+    display: inline-block;
+    width: 190px;
+}
+
+.menu_b span {
+    font-size: 14px;
+    color: #999999;
+}
+
