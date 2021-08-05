@@ -2,85 +2,59 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <!-- GOOGLE-ICONS -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+        <link href="../css/common.css" type="text/css" rel="stylesheet">
         <link href="../css/1-2.css" type="text/css" rel="stylesheet">
+
+        <!-- SCRIPT -->
         <script src="../script/jquery-1.12.3.js" type="text/javascript"></script>
         <script src="../script/script.js" defer="defer" type="text/javascript"></script>
+
         <title>sosoDay소소데이</title>
     </head>
     <body>
         <header>
-            <div class="logo">
-                <a href="../index.html"><img src="../img/logo.gif" alt="logo"></a>
-            </div>
-            <div class="u_menu">
-                <div>
-                    <a href="#">
-                        <img src="../img/mypage.gif" alt="mypage">
-                        <span>마이페이지</span>
-                    </a>
+            <div class="inner">
+                <div class="logo">
+                    <a href="#"><img src="../img/logo.gif" alt="logo"></a>
                 </div>
-                <div>
+                <div class="u_menu">
                     <a href="#">
-                        <img src="../img/OrderCheck.gif" alt="ordercheck">
-                        <span>주문조회</span>
+                        <img src="../img/mypage.gif" alt="mypage">마이페이지
                     </a>
-                </div>
-                <div>
                     <a href="#">
-                        <img src="../img/shopping%20cart.gif" alt="shoppingcart">
-                        <span>장바구니</span>
+                        <img src="../img/OrderCheck.gif" alt="ordercheck">주문조회
                     </a>
-                </div>
-                <div>
                     <a href="#">
-                        <img src="../img/login.gif" alt="login">
-                        <span>로그인</span>
+                        <img src="../img/shopping%20cart.gif" alt="shoppingcart">장바구니
                     </a>
-                </div>
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li id="categ"><a href="#">카테고리</a>
-                        <ul class="submenu">
-                            <li><a href="#">다이어리</a>
-                                <ul class="subsubmenu">
-                                    <li><a href="#">2021 날짜형 다이어리</a></li>
-                                    <li><a href="#">만년형 다이어리</a></li>
-                                    <li><a href="#">2021 날짜형 스케줄러</a></li>
-                                    <li><a href="#">먼슬리 스케줄러</a></li>
-                                    <li><a href="#">위클리 스케줄러</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">필기구</a>
-                                <ul class="subsubmenu">
-                                    <li><a href="#">연필</a></li>
-                                    <li><a href="#">볼펜</a></li>
-                                    <li><a href="#">형광펜</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">데코/디자인테이프</a>
-                                <ul class="subsubmenu">
-                                    <li><a href="#">디자인테이프</a></li>
-                                    <li><a href="#">마스킹테이프</a></li>
-                                    <li><a href="#">마스킹테이프 보관함</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><span id="english">BEST</span></a></li>
-                    <li><a href="#"><span id="english">NEW</span></a></li>
-                    <li><a href="#">오늘의 후기</a></li>
-                    <li><a href="#">공지사항</a></li>
-                </ul>
-                <div class="search">
-                    <div class="inputbox">
+                    <a href="#">
+                        <img src="../img/login.gif" alt="login">로그인
+                    </a>
+                    <div class="search">
                         <input type="text" placeholder="Search">
                         <a href="#"><img src="../img/search.gif" alt="search"></a>
                     </div>
                 </div>
-            </nav>
+                <ul class="nav">
+                    <li><a href="#"><span id="english">BEST</span></a></li>
+                    <li><a href="#"><span id="english">NEW</span></a></li>
+                    <li><a href="#">오늘의 후기</a></li>
+                    <li><a href="#">공지사항</a></li>    
+                </ul>
+                <div class="material-icons category">menu
+                    <ul class="menu">
+                        <li><a href="./diary-enduring_type/index.html">다이어리</a></li>
+                        <li><a href="#">필기구</a></li>
+                        <li><a href="#">디자인테이프</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
-        <div id="clear"></div>
         
         <div class="contents">
             <div class="contents_group">
@@ -95,8 +69,8 @@
                     <a href="#"><span>▶다이어리</span></a>
                 </div>
                 <div class="category">
-                    <div id="cate1"><a href="#"><span>2021 날짜형 다이어리</span></a></div>
                     <div id="cate1"><a href="#"><span>만년형 다이어리</span></a></div>
+                    <div id="cate1"><a href="#"><span>2021 날짜형 다이어리</span></a></div>
                     <div id="clear"></div>
                     <div id="cate1"><a href="#"><span>2021 날짜형 스케줄러</span></a></div>
                     <div id="cate1"><a href="#"><span>먼슬리 스케줄러</span></a></div>
