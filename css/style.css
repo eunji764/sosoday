@@ -217,13 +217,17 @@
     width: 95%;
 }
 
-.mdspick_items .mdspick_item {
+.mdspick_items a.mdspick_item {
     width : 15%;
     text-align: center;
 }
 
 .mdspick_items .mdspick_item img {
     width: 100%;
+}
+
+.mdspick_items a.mdspick_item:hover img {
+    opacity: .8;
 }
 
 .mdspick_items .mdspick_item p {
@@ -234,6 +238,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.mdspick_items a.mdspick_item:hover p {
+    text-decoration: underline;
 }
 
 .mdspick_items .mdspick_item span {
