@@ -1,8 +1,8 @@
 /* COMMON */
 body {
   list-style: none;
-  color: #333333; 
-  font-family:"sinsin";
+  color: #333333;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 1rem;
 }
 
@@ -15,22 +15,6 @@ body {
 img {
   display: block;
 }
-
-@font-face {
-  font-family:"garosu";
-  src:url('KoreanGRS-R.woff');
-}
-
-@font-face {
-  font-family:"dream";
-  src:url('KoreanDREAM6-R.woff');
-}
-
-@font-face {
-  font-family:"sinsin";
-  src:url('KoreanNMJ-B.woff');
-}
-
 a {
   text-decoration:none;
   color: inherit;
@@ -90,10 +74,6 @@ header .logo img {
   background-color: rgba(247, 233, 233, 0.7);
 }
 
-#english {
-  font-family: "Baskerville BT";
-  font-size: 18px;
-}
 
 header .material-icons {
   font-size: 1.875rem;

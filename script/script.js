@@ -4,20 +4,7 @@ const menuBtn = document.querySelector('.category'),
       menu = document.querySelector('.menu'),
       navMenu = document.querySelector('.nav')
 
-let width
-
-window.addEventListener('resize', ()=> {
-  width = window.innerWidth
-  if(width > 1024){
-    menu.style.display='none'
-    topMenu.style.display='flex'
-    navMenu.style.display='flex'
-  } else {
-    menu.style.display='none'
-    topMenu.style.display='none'
-    navMenu.style.display='none'
-  }
-})
+let width = window.innerWidth
 
 menuBtn.addEventListener('mouseover',()=>{
   if ( width > 1024){menu.style.display='block'}
@@ -40,6 +27,21 @@ menuBtn.addEventListener('click',()=>{
     }
   }
 })
+
+window.addEventListener('resize', ()=> {
+  width = window.innerWidth
+  if(width > 1024){
+    menu.style.display='none'
+    topMenu.style.display='flex'
+    navMenu.style.display='flex'
+  } else {
+    menu.style.display='none'
+    topMenu.style.display='none'
+    navMenu.style.display='none'
+  }
+})
+
+
 
 
 var imgs=2;
@@ -82,3 +84,30 @@ function showSlides(n) {
   
   slides[slideIndex-1].style.display = "block";
 }
+
+
+// 남은시간 계산
+const timeText = document.querySelector('.time_sale .sale_info em')
+
+function time(){
+  let today = new Date(),
+      year = today.getFullYear(),
+      month = today.getMonth() + 1,
+      date = today.getDate(),
+      todayEnd = new Date(`${year}-${month}-${date} 23:59:59`),
+      remained = todayEnd.getTime() - today.getTime(),
+      remainedHours = Math.floor(remained/1000/60/60),
+      remainedMinutes = Math.floor(remained/1000/60-remainedHours*60),
+      remainedSeconds = Math.floor(remained/1000-remainedMinutes*60-remainedHours*60*60)
+  
+timeText.innerHTML = `남은시간 ${remainedHours>=10?remainedHours:'0'+ remainedHours} : ${remainedMinutes>=10?remainedMinutes:'0'+remainedMinutes} : ${remainedSeconds>=10?remainedSeconds:'0'+remainedSeconds}`  
+}
+
+function init() {
+  time()
+  setInterval(time,1000)
+}
+
+init()
+
+

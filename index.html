@@ -5,6 +5,12 @@
         <!-- GOOGLE-ICONS -->
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+
         <!-- CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
         <link href="./css/common.css" type="text/css" rel="stylesheet">
@@ -14,7 +20,7 @@
         <script src="script/jquery-1.12.3.js" type="text/javascript"></script>
         <script src="script/script.js" defer="defer" type="text/javascript"></script>
 
-        <link rel="icon" href="../img/logo.gif">
+        <link rel="icon" href="./img/logo.gif">
         <title>sosoDay소소데이</title>
 
 
@@ -23,24 +29,24 @@
         <header>
             <div class="inner">
                 <div class="logo">
-                    <a href="#"><img src="../img/logo.gif" alt="logo"></a>
+                    <a href="#"><img src="./img/logo.gif" alt="logo"></a>
                 </div>
                 <div class="u_menu">
                     <a href="#">
-                        <img src="../img/mypage.gif" alt="mypage">마이페이지
+                        <img src="./img/mypage.gif" alt="mypage">마이페이지
                     </a>
                     <a href="#">
-                        <img src="../img/OrderCheck.gif" alt="ordercheck">주문조회
+                        <img src="./img/OrderCheck.gif" alt="ordercheck">주문조회
                     </a>
                     <a href="#">
-                        <img src="../img/shopping%20cart.gif" alt="shoppingcart">장바구니
+                        <img src="./img/shopping%20cart.gif" alt="shoppingcart">장바구니
                     </a>
                     <a href="#">
-                        <img src="../img/login.gif" alt="login">로그인
+                        <img src="./img/login.gif" alt="login">로그인
                     </a>
                     <div class="search">
                         <input type="text" placeholder="Search">
-                        <a href="#"><img src="../img/search.gif" alt="search"></a>
+                        <a href="#"><img src="./img/search.gif" alt="search"></a>
                     </div>
                 </div>
                 <ul class="nav">
@@ -62,9 +68,9 @@
         <!-- IMAGE-SLIDE -->
         <section class="imgslide">
             <div class="inner">
-                <a href="#"><img src="../img/imgslide2.jpg" alt="imgslide" class="imgs"></a>
-                <a href="#"><img src="../img/imgslide.jpg" alt="imgslide" class="imgs"></a>
-                <a href="#"><img src="../img/imgslide3.jpg" alt="imgslide" class="imgs"></a>
+                <a href="#"><img src="./img/imgslide2.jpg" alt="imgslide" class="imgs"></a>
+                <a href="#"><img src="./img/imgslide.jpg" alt="imgslide" class="imgs"></a>
+                <a href="#"><img src="./img/imgslide3.jpg" alt="imgslide" class="imgs"></a>
                 <div class="imgslide_arrow imgslide_left" >
                     <a href="#" onclick="plusSlides(-1)" class="material-icons">arrow_back_ios_new</a>
                 </div>
@@ -77,143 +83,121 @@
         <!-- EVENT -->
         <div class="event">
             <div class="inner">
-                <a href="#"><img src="../img/event.jpg" alt="event"></a>
+                <img src="./img/banner.png" alt="event">
+                <a href="javascript:void(0)"><span>보러가기</span><span class="material-icons">arrow_forward_ios</span></a>
             </div>
         </div>
         
-       <!--  <div class="contents">
-            
-            <div class="event">
-                <a href="#"><img src="../img/event.jpg" alt="event"></a>
-            </div>
-            <div class="product">
-                <div class="timesale">
-                    <div id="timesale_title">
-                        <a href="#">TimeSale >></a>
+        <!-- TIMESALE -->
+        <section class="time_sale">
+            <div class="inner">
+                <div class="sale_info">
+                    <span class="material-icons decor">assistant</span>
+                    <p>오늘의 <span class="decor">특</span>가</p>
+                    <div class="material-icons time">alarm</div>
+                    <em></em>
+                </div>
+                <div class="sale_items">
+                    <div class="sale_item sale_item_1">
+                        <a href="javascript:void(0)">
+                            <div class="img-box"><img src="./img/timesale1.jpg" alt="ARTE MASKING TAPE"></div>
+                            <p class="name">ARTE 마스킹 테이프 12set</p>
+                            <span class="before_discount">26,000원</span>
+                            <span class="price">20,000원</span>
+                        </a>
                     </div>
-                    <div class="timesale1">
-                        <div class="timesale1_text">
-                            <a href="#">
-                                <div id="time">1일남음</div>
-                                <div id="name">다이노탱 다이어리 세트</div>
-                                <div id="coment">특가 + 무료배송</div>
-                                <div id="before_price">21,000원</div>
-                                <div id="sale_price">18,000원</div>
-                            </a>
-                        </div>
-                        <div class="timesale1_img">
-                            <a href="#"><img src="../img/timesale1.jpg" alt="timesale1"></a>
-                        </div>
+                    <div class="sale_item sale_item_2">
+                        <a href="javasctipt:void(0)">
+                            <div class="img-box"><img src="./img/timesale2.jpg" alt="DINOTAENG"></div>
+                            <p class="name">다이노탱 다이어리 세트 특가</p>
+                            <span class="before_discount">21,000원</span>
+                            <span class="price">18,000원</span>
+                        </a>
                     </div>
-                    <div class="timesale2">
-                        <div class="timesale2_text">
-                            <a href="#">
-                                <div id="time">3일남음</div>
-                                <div id="name">ARTE 마스킹테이프</div>
-                                <div id="coment">12set 특별구성 할인</div>
-                                <div id="before_price">26,000원</div>
-                                <div id="sale_price">20,000원</div>
-                            </a>
-                        </div>
-                        <div class="timesale2_img">
-                            <a href="#"><img src="../img/timesale2.jpg" alt="timesale2"></a>
-                        </div>
+                    <div class="sale_item sale_item_3">
+                        <a href="javascript:void(0)">
+                            <div class="img-box"><img src="./img/timesale3.jpg" alt="RANDOM BOX"></div>
+                            <p class="name">빅키드 다드림 랜덤박스</p>
+                            <span class="before_discount">39,000원</span>
+                            <span class="price">19,000원</span>
+                        </a>
                     </div>
                 </div>
-                <div class="mdspick">
-                    <div id="mdspick_title">
-                        <a href="#">MD's Pick >></a>
-                    </div>
-                    <div class="mdspick_img">
-                        <div>
-                            <a href="#">
-                                <img src="../img/MDsPick1.jpg" alt="mdspick">
-                                <div id="product_name">고양이 마스킹 테이프 3종</div>
-                                <div id="price">5,500원</div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../img/MDsPick2.jpg" alt="mdspick">
-                                <div id="product_name">2021 포레스트 친환경 다이어리</div>
-                                <div id="price">9,000원</div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../img/MDsPick3.jpg" alt="mdspick">
-                                <div id="product_name">2021 아젠다 다이어리L</div>
-                                <div id="price">21,000원</div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../img/MDsPick4.jpg" alt="mdspick">
-                                <div id="product_name">봄사무소 마스킹 테이프 8종</div>
-                                <div id="price">5,000원</div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../img/MDsPick5.jpg" alt="mdspick">
-                                <div id="product_name">에디터 펜 3color</div>
-                                <div id="price">3,500원</div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../img/MDsPick6.jpg" alt="mdspick">
-                                <div id="product_name">2021 젤리베어 다이어리 세트</div>
-                                <div id="price">16,900원</div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../img/MDsPick7.jpg" alt="mdspick">
-                                <div id="product_name">구버크레용 블록 레인보우</div>
-                                <div id="price">5,000원</div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../img/MDsPick8.png" alt="mdspick">
-                                <div id="product_name">I HAD A NICE 다이어리</div>
-                                <div id="price">14,500원</div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../img/MDsPick9.jpg" alt="mdspick">
-                                <div id="product_name">MMM 먼슬리 메모패드</div>
-                                <div id="price">5,000원</div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../img/MDsPick10.jpg" alt="mdspick">
-                                <div id="product_name">헤이데이 스터디 플래너</div>
-                                <div id="price">8,800원</div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../img/MDsPick11.jpg" alt="mdspick">
-                                <div id="product_name">빈티지 콜라주 마스킹테이프</div>
-                                <div id="price">5,000원</div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../img/MDsPick12.jpg" alt="mdspick">
-                                <div id="product_name">오를데이 로고펜 4color</div>
-                                <div id="price">2,500원</div>
-                            </a>
-                        </div>
-                    </div>
+            </div> 
+        </section>
+
+        <!-- MD'S PICK -->
+        <section class="mdspick">
+            <div class="inner">
+                <div class="mdspick_title">
+                    <p>MD's Pick <span class="material-icons">push_pin</span></p>
+                    <a href="javascript:void(0)" class="more">더보기 <span class="material-icons">arrow_forward_ios</span></a>
+                </div>
+                <div class="mdspick_items">
+                    <a href="javascript:void(0)" class="mdspick_item">
+                        <img src="./img/MDsPick1.jpg" alt="mdspick">
+                        <p class="name">고양이 마스킹 테이프 3종</p>
+                        <span class="price">5,500원</span>
+                    </a>
+                    <a href="javascript:void(0)" class="mdspick_item">
+                        <img src="./img/MDsPick2.jpg" alt="mdspick" />
+                        <p class="name">2021 포레스트<br />친환경 다이어리</p>
+                        <span class="price">9,000원</span>
+                    </a>
+                    <a href="javascript:void(0)" class="mdspick_item">
+                        <img src="./img/MDsPick3.jpg" alt="mdspick" />
+                        <p class="name">2021 아젠다 다이어리L</p>
+                        <span class="price">21,000원</span>
+                    </a>
+                    <a href="javascript:void(0)" class="mdspick_item">
+                        <img src="./img/MDsPick4.jpg" alt="mdspick" />
+                        <p class="name">봄사무소 마스킹 테이프 8종</p>
+                        <span class="price">5,000원</span>
+                    </a>
+                    <a href="javascript:void(0)" class="mdspick_item">
+                        <img src="./img/MDsPick5.jpg" alt="mdspick" />
+                        <p class="name">에디터 펜 3color</p>
+                        <span class="price">3,500원</span>
+                    </a>
+                    <a href="javascript:void(0)" class="mdspick_item">
+                        <img src="./img/MDsPick6.jpg" alt="mdspick" />
+                        <p class="name">2021 젤리베어 다이어리 세트</p>
+                        <span class="price">16,900원</span>
+                    </a>
+                    <a href="javascript:void(0)" class="mdspick_item">
+                        <img src="./img/MDsPick7.jpg" alt="mdspick" />
+                        <p class="name">구버크레용 블록 레인보우</p>
+                        <span class="price">5,000원</span>
+                    </a>
+                    <a href="javascript:void(0)" class="mdspick_item">
+                        <img src="./img/MDsPick8.png" alt="mdspick" />
+                        <p class="name">I HAD A NICE 다이어리</p>
+                        <span class="price">14,500원</span>
+                    </a>
+                    <a href="javascript:void(0)" class="mdspick_item">
+                        <img src="./img/MDsPick9.jpg" alt="mdspick" />
+                        <p class="name">MMM 먼슬리 메모패드</p>
+                        <span class="price">5,000원</span>
+                    </a>
+                    <a href="javascript:void(0)" class="mdspick_item">
+                        <img src="./img/MDsPick10.jpg" alt="mdspick" />
+                        <p class="name">헤이데이 스터디 플래너</p>
+                        <span class="price">8,800원</span>
+                    </a>
+                    <a href="javascript:void(0)" class="mdspick_item">
+                        <img src="./img/MDsPick11.jpg" alt="mdspick" />
+                        <p class="name">빈티지 콜라주 마스킹테이프</p>
+                        <span class="price">5,000원</span>
+                    </a>
+                    <a href="javascript:void(0)" class="mdspick_item">
+                        <img src="./img/MDsPick12.jpg" alt="mdspick" />
+                        <p class="name">오를데이 로고펜 4color</p>
+                        <span class="price">2,500원</span>
+                    </a> 
                 </div>
             </div>
-            <div id="clear"></div>
-            <div class="banner_b">
+        </section> 
+        <!--<section class="banner_b">
                 <div class="imgs_b_main">
                     <a href="#"><img src="../img/b_img1.jpg" alt="b_imgs" id="b_mainimg"></a>
                     <div>
@@ -229,8 +213,7 @@
                             <span id="percent2">5%~</span></a>
                     </div>
                 </div>
-            </div>
-        </div> -->
+            </section>-->
 
         <footer>
             <div class="inner">
