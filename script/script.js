@@ -95,7 +95,7 @@ function time(){
       month = today.getMonth() + 1,
       date = today.getDate(),
       todayEnd = new Date(`${year}-${month}-${date} 23:59:59`),
-      remained = todayEnd.getTime() - today.getTime(),
+      remained = todayEnd.getTime() - today.getTime() + 1000,
       remainedHours = Math.floor(remained/1000/60/60),
       remainedMinutes = Math.floor(remained/1000/60-remainedHours*60),
       remainedSeconds = Math.floor(remained/1000-remainedMinutes*60-remainedHours*60*60)

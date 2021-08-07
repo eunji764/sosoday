@@ -1,162 +1,114 @@
+/* CATEGORY_BOX */
 
-.search {
-    width: 250px;
-    height: 50px;
-    float: right;
+.category_box .inner {
+    margin: 20px auto 30px;
 }
 
-.inputbox {
-    margin-top: 10px;
-    width: 250px;
-    height: 30px;
-    background-color: #eeeeee;
-}
-
-.inputbox input {
-    border: none;
-    background-color: #eeeeee;
-    margin-top: 7px;
-    margin-left: 15px;
-}
-
-.inputbox input:focus {
-    outline: none;
-    background-color: #eeeeee;
-    margin-top: 7px;
-    margin-left: 15px;
-}
-
-.inputbox img {
-    width: 25px;
-    float: right;
-    margin-top: 5px;
-    margin-right: 5px;
-}
-
-.contents {
-    width: 1200px;
-    height: 2580px;
-}
-
-.contents_group {
-    width: 100%;
-    height: 150px;
-    margin-top: 30px;
-}
-
-.path {
-    width: 1200px;
-    height: 30px;
+.category_box .inner .path {
     text-align: right;
 }
 
-.path span {
-    color: #666666;
-    font-size: 15px;
+.category_box .inner .detail_category {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
 }
 
-.main_menu {
-    width: 100px;
-    height: 50px;
-    margin-left: 200px;
-    padding-top: 27px;
-    font-size: 18px;
-    float: left;
+.path a {
+    color : #666666;
 }
 
-.category {
-    width: 750px;
-    height: 80px;
-    float: right;
-    margin-right: 120px;
-    text-align: left;
+.path a:last-child {
+    font-weight: 700;
 }
 
-#cate1 {
-    width: 200px;
-    height: 30px;
-    border: 1px solid #cccccc;
-    border-radius: 3px;
-    display: inline-block;
-    margin-bottom:12px;
-    padding-left: 9px;
-}
-
-#cate1, #cate3, #cate4 {
-    margin-right: 34px;
-}
-
-#cate2 {
-    border: 1px solid #333333;
-}
-
-#cate1:hover , #cate3:hover, #cate4:hover, #cate5:hover {
-    border: 1px solid #333333;
-}
-
-.category span {
-    font-size: 16px;
-    line-height: 1.8em;
-}
-
-.contents_best_item {
-    width: 1200px;
-    height: 510px;
+.detail_category > a {
+    display: block;
+    width: 20%;
     text-align: center;
+    font-size: 1.2rem;
+}
+
+.detail_category .category_group {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-left: 1px solid #eee;
+}
+
+.detail_category .category_group a {
+    text-align: center;
+    width: 25%;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.detail_category .category_group a:hover {
+    color : #995002;
+}
+
+/* BEST ITEM */
+.best_items {
     background-color: #f8f8f8;
 }
+.best_items .inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
 
-.best_icon {
-    width: 350px;
-    height: 60px;
+.best_items .inner .best_item {
+    width: 30%;
+    border: 1px solid #c7d1c1;
+    border-radius: 10px;
+}
+
+.best_item .best_icon {
     text-align: center;
-    padding-top: 20px;
+    padding: 5px 0 10px;
 }
 
-#heart {
-    width: 35px;
-    height: 29px;
+.best_item > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
 }
 
+.best_icon img {
+    width: 30px;
+    margin : 10px auto;
+}
 .best_icon span {
-    font-family: "Baskerville BT";
+    font-size: 2rem;
+    font-weight: 700;;
+    color : #666;
 }
 
-.best1 {
-    display: inline-block;
-    width: 350px;
-    height: 464px;
-    margin: 20px 20px 0 20px;
-    text-align: center;
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
+.best_item > a img {
+    width: 90%;
 }
 
-
-.best_item {
-    width: 350px;
-    height: 384px;
+.best_item > a p {
+    padding: 10px 0 7px;
+    font-size: 1.3rem;
 }
 
-.best_item img {
-    width: 330px;
-    height: 330px;
+.best_item > a span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 2px 0 10px;
 }
 
-.best_item img:hover {
-    opacity: 0.8;
-}
-.product_name_best span {
-    font-size: 16px;
-    line-height: 1.5em;
-}
-
-.price_best span {
-    font-size: 15px;
-    line-height: 1.7em;
-    color: #995002;
-}
-
+/* ITEM BOX */
+/* 
 .contents_item {
     width: 100%;
     height: 1825px;
@@ -234,40 +186,6 @@
     background-color: #eeeeee;
 }
 
-footer {
-    width: 1200px;
-    height: 100px;
-    background-color: #eeeeee;
-}
+ */
 
-.logo_b {
-    float: left;
-    width: 200px;
-    height: 100px;
-    text-align: center;
-}
-
-.logo_b img {
-    width: 130px;
-    padding-top: 7px;
-}
-
-.menu_b, .copy {
-    text-align: center;
-    float: right;
-    width: 1000px;
-    height: 50px;
-    color: #999999;
-}
-
-.menu_b>div {
-    margin-top: 20px;
-    display: inline-block;
-    width: 190px;
-}
-
-.menu_b span {
-    font-size: 14px;
-    color: #999999;
-}
 
